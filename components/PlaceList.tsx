@@ -69,8 +69,8 @@ function PlaceList({ data }: PlaceListType) {
 
       {data.length === 0 && (
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
-          {[1, 2, 3, 4, 5, 6, 7].map((item: number, index: number) => {
-            return <Skelton key={`item_${item}_${index}`} />;
+          {[1, 2, 3, 4, 5, 6, 7].map((item: number) => {
+            return <Skelton key={`item_${item}`} />;
           })}
         </div>
       )}
